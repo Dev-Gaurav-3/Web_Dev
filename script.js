@@ -91,3 +91,102 @@
 
 // FAULTY CALCI //
 
+// let rand = Math.random();
+
+// let a = prompt("Enter First Number: ");
+//  let c = prompt("Enter Operation: ");
+// let b = prompt("Enter Second Number: ");
+
+// let obj = {
+//     "+" : "-",
+//     "-" : "*",
+//     "*" : "/",
+//     "/" : "**"
+// }
+
+// if(rand > 0.1){
+//     alert(`The result is : ${eval(`${a} ${c} ${b}`)}`);
+// }
+
+// else{
+//     c = obj[c];
+//     alert(`The result is : ${eval(`${a} ${c} ${b}`)}`);
+// }
+
+// // Jumble Words // 
+
+// let set1 = {
+//     "1" : "Crazy",
+//     "2" : "Amazing",
+//     "3" : "Fire",
+// }
+
+// let set2 = {
+//     "1" : "Engine",
+//     "2" : "Garments",
+//     "3" : "Food",
+// }
+
+// let set3 = {
+//     "1" : "Bros",
+//     "2" : "Limited",
+//     "3" : "Hub",
+// }
+
+// let a = prompt("Enter a num b/w 1 to 3: ");
+// let b = prompt("Enter a num b/w 1 to 3: ");
+// let c = prompt("Enter a num b/w 1 to 3: ");
+
+// alert(`Your Business name is : ${set1[a]} ${set2[b]} ${set3[c]}`);
+
+// ARRAY //
+
+// let arr = [1,2,3,4,5,6];
+// console.log(arr);   
+// console.log(arr.toString());
+// console.log(arr.join(" and "));
+// console.log(arr.pop()); // removes last element //
+// arr.shift() // removes first element //
+// arr.push(11); // add at back //
+// arr.unshift(0) // add at starting //
+// arr.concat(arr1,arr2)
+
+// arr.splice(1,3); // removes from 1 to 3 index //
+// console.log(arr);
+// arr.splice(1,3,8,9); // insert last elements //
+// console.log(arr); 
+// arr.forEach((val,ind,arr) =>{
+//     console.log(val,ind,arr);
+// })
+
+// let a = [1,5,3,2,4,3];
+
+// let b = a.map((e) =>{
+//     return e**2;
+// })
+
+// console.log(b);
+
+// let a = [1,3,8,41,6,5];
+
+// const greaterThan7 = (e) =>{
+//     if(e>7){
+//         return true;
+//     }
+//     else{
+//         false;
+//     }
+// }
+
+// console.log(a.filter(greaterThan7));
+
+// let a = [1,2,3,4,5];
+
+// const red = (a,b) =>{
+//     return a*b;
+// }
+// console.log(a.reduce(red));
+
+// console.log(Array.from("Gaurav"));
+
+ x``
