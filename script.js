@@ -68,3 +68,26 @@
 // }
 // console.log(sum(5,6));
 // console.log(sum(5,6,5));
+
+// const func = (x)=>{
+//     console.log("This is an arrow function",x);
+// }
+
+// func(5);
+
+// var num = Math.random();
+// console.log(num);
+
+// STRINGS // 
+
+// let a = "hello";
+// // console.log(`i want to say you ${a}`);
+
+// console.log(a.slice(1,5));
+// console.log(a.replace("he" , "she"));
+
+// let b = "  Gaur";
+// console.log(b.trim()); // removes white spaces //
+
+// FAULTY CALCI //
+
