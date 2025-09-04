@@ -189,4 +189,5 @@
 
 // console.log(Array.from("Gaurav"));
 
- x``
+
+document.body.childNodes[1].childNodes
