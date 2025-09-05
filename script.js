@@ -228,4 +228,3 @@
 // document.querySelector(".container").classList.remove("hlo")
 
 // document.querySelector(".container").classList.toggle("red") // if already there then remove it and if not then add it 
-
