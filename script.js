@@ -190,4 +190,42 @@
 // console.log(Array.from("Gaurav"));
 
 
-document.body.childNodes[1].childNodes
+// document.body.childNodes[1].childNodes
+
+// let boxes = document.getElementsByClassName("box");
+// console.log(boxes);
+// boxes[1].style.backgroundColor = "red";
+
+// document.getElementById("box3").style.backgroundColor = "green"
+
+// document.querySelector(".box").style.backgroundColor = "blue"; // select first element which have class = "Box"
+// document.querySelectorAll(".box") // return node list of all html elements having box class
+
+// // to access it //
+
+// document.querySelectorAll(".box").forEach((e) => {
+//     e.style.backgroundColor = "blue";
+// });
+
+// console.log(document.getElementsByTagName("div")) // returns html collection including parent 
+
+// document.querySelector(".box").innerText; // returns text // 
+
+// let div = document.createElement("div");
+// div.innerHTML = "I am the inner Html";
+// div.setAttribute("class","created");
+// document.querySelector(".container").before(div) // or we can use append or after or prepend or replace
+
+// let cont = document.querySelector(".container");
+// cont.insertAdjacentHTML("beforebegin","Hello hii Bye");
+// cont.insertAdjacentHTML("afterend","Hello hii Bye Bye");
+
+// TO REMOVE ANY CLASS OR ADD // 
+
+// document.querySelector(".container").classList.add("bg-green")
+// document.querySelector(".container").classList.add("hlo")
+// document.querySelector(".container").className
+// document.querySelector(".container").classList.remove("hlo")
+
+// document.querySelector(".container").classList.toggle("red") // if already there then remove it and if not then add it 
+
