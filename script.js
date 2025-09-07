@@ -228,3 +228,28 @@
 // document.querySelector(".container").classList.remove("hlo")
 
 // document.querySelector(".container").classList.toggle("red") // if already there then remove it and if not then add it 
+
+
+// let btn = document.getElementById("btn");
+
+// btn.addEventListener("click",(e)=>{
+//     alert("hello");
+// })
+
+// document.addEventListener("keydown",(e) => {
+//     console.log(e.key);
+// })
+
+// EVENT BUBBLING  => like there are three div within each other so if i implement event ont all three div and if i click on 
+// child node than all of them will trigger to avoid that we use e.stopPropagation()//
+
+// TO DO SOMETHING AFTER AN INTERVAL OF TIME //
+
+// let a = setInterval(() => {
+//     document.body.style.background = "" // any random color function
+    
+// }, 3000); // means 3s
+
+// TO STOP IT // use clearInterval(// the no. provided in the console on browser);
+
+
