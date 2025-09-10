@@ -66,21 +66,57 @@
 
 // ASYNC AWAIT // 
 
-async function getdata() {
-    return new Promise((resolve,reject)=>{
-        setTimeout(() => {
-            resolve(455);
-        }, 3500);
-    })
+// async function getdata() {
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(() => {
+//             resolve(455);
+//         }, 3500);
+//     })
+// }
+
+// async function main() {
+//     console.log("1st");
+//     console.log("2nd");
+//     console.log("3rd");
+//     let data = await getdata(); // wait till getdata() gets executed //
+//     console.log(data);
+//     console.log("4th");
+// }
+// main();
+
+let a = prompt("Enter a num: "); // by defaut String //
+let b = prompt("Enter a num: ");
+// what if user gives the wrong input //
+
+if(isNaN(a) || isNaN(b)){
+    throw SyntaxError("Sorry this is not allowed");
 }
 
-async function main() {
-    console.log("1st");
-    console.log("2nd");
-    console.log("3rd");
-    let data = await getdata(); // wait till getdata() gets executed //
-    console.log(data);
-    console.log("4th");
+let sum = parseInt(a) + parseInt(b);
+console.log("The sum is :" , sum)
+// console.log("The sum is :" , sum*x) // here x is not defined so how to catch it //
+
+try {
+    console.log("The sum is:", sum*x);
+} catch (error) {
+    console.log("Error aa gaya")
 }
+
+// like we have function and we are retunning some value and we want to execute something after return statement //
+
+function main(){
+
+    let x = 2;
+    try {
+        console.log("The sum is:", sum*x);
+        return true;
+    } catch (error) {
+        console.log("Error aa gaya")
+        return false;
+    }
+    finally{
+        console.log("Executed !! ");
+    }
+}
+
 main();
-
