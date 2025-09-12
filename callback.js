@@ -74,6 +74,8 @@
 //     })
 // }
 
+// // ASYNC FUNCTION RETURNS PROMISE NECESSARILY // 
+
 // async function main() {
 //     console.log("1st");
 //     console.log("2nd");
@@ -141,29 +143,48 @@
 //     console.log(res);
 // })
 
-function asynFunc1(){
-    return new Promise((resolve,reject) =>{
-        setTimeout(() => {
-        console.log("Some data 1");
-        resolve("sucess");
-    }, 3000);
-    })
-}
-function asynFunc2(){
-    return new Promise((resolve,reject) =>{
-        setTimeout(() => {
-        console.log("Some data 2");
-        resolve("sucess");
-    }, 4000);
-    })
+// function asynFunc1(){
+//     return new Promise((resolve,reject) =>{
+//         setTimeout(() => {
+//         console.log("Some data 1");
+//         resolve("sucess");
+//     }, 3000);
+//     })
+// }
+// function asynFunc2(){
+//     return new Promise((resolve,reject) =>{
+//         setTimeout(() => {
+//         console.log("Some data 2");
+//         resolve("sucess");
+//     }, 4000);
+//     })
+// }
+
+// asynFunc1().then((res) => {
+//     console.log("fetching data 1");
+//     console.log(res);
+//     asynFunc2().then((res2) => {
+//     console.log("Fetching data 2");
+//     console.log(res2);
+// })
+// })
+
+// API //
+
+
+const URL = "https://meowfacts.herokuapp.com/";
+
+// let promise = fetch(URL);
+// console.log(promise);
+
+const getFacts = async() =>{
+    let promise = await fetch(URL);
+    console.log(promise); // currently it is in JSON Format //
+    // console.log(promise.status);
+    let data = await promise.json();
+    console.log(data);
+    console.log(data[1]);
+
 }
 
-asynFunc1().then((res) => {
-    console.log("fetching data 1");
-    console.log(res);
-    asynFunc2().then((res2) => {
-    console.log("Fetching data 2");
-    console.log(res2);
-})
-})
-
+getFacts();
